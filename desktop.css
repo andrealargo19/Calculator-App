@@ -1,0 +1,130 @@
+@media only screen and (min-width:800px){
+    .principal-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:nowrap;
+        justify-content:space-around;
+        width:750px;
+        height:400px;
+        margin: 50px auto;
+        padding: 20px 20px;
+        background-color:var(--White);
+        border:none;
+        border-radius: 22px;
+    }
+    .container-left{
+        width: 375px;
+        height: 340px; 
+    }
+    
+    .container-left label{
+        font-size: 1.4rem;      
+    }
+    
+    .container-input-bill{
+        width: 300px;
+        height:35px;   
+        margin-bottom: 20px;   
+    }
+    .container-input-bill .input-bill{
+        width: 300px;
+        height:35px;
+        font-size: 2rem;  
+    }
+    .container-input-bill ::before{
+        width: 12px;
+        height: 18px;
+        left:8px;
+        bottom:18px;
+        top:28px;   
+    }
+    .container-input-person{
+        width: 300px;
+        height:35px;
+        font-size:2rem; 
+    }
+    .container-input-person .input-person{
+        width: 300px;
+        height:35px;
+        font-size: 2rem;
+    }
+    .input-bill::placeholder{
+        font-size: 2rem;
+        text-align:right;
+        padding-right: 5px;      
+    }
+    .container-input-person ::before{
+        width: 15px;
+        height: 18px;
+        left:8px;
+        bottom:18px;
+        top:36px;
+    }
+    .input-person::placeholder{
+        font-size: 2rem;
+        text-align:right;
+        padding-right: 5px;
+    }
+    .container-button-percent{
+        width: 300px;
+        display:grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-bottom: -20px;      
+    }
+    .container-button-percent .button-percent{
+        width: 90px;
+        height: 28px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.5rem;      
+    }
+    #button-custom{
+        font-size: 1.5rem;
+        text-align: center; 
+    }
+    #button-custom ::placeholder{
+        font-weight: bold;
+        text-align: right;
+    }
+    .container-right {
+        width: 375px;
+        height: 340px; 
+        justify-content: space-around; 
+    }
+    
+    .container-right .mini-container-tip-amount{
+        width: 300px;
+        margin:0 auto;
+    }
+    
+    .container-right .mini-container-total-person{
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    .container-right h4 b{
+        font-size: 1.2rem; 
+        
+    }
+    .container-right h4{
+        font-size: 1.1rem;   
+    }
+    
+    .container-right .results-tip-amount{
+        font-size: 2.7rem;
+    
+    }
+    .container-right .results-total-person {
+        font-size: 2.7rem;
+        
+    }  
+    .container-input-reset{
+        width: 300px;
+       
+    }
+    .container-input-reset .input-reset{
+        width:260px;
+        height: 32px;        
+    }
+}

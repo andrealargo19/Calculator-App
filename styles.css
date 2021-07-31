@@ -1,0 +1,294 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    
+    --Strongcyan: hsl(172, 67%, 45%);
+    --Verydarkcyan: hsl(183, 100%, 15%);
+    --Dark-grayishcyan: hsl(186, 14%, 43%);
+    --Darkgrayishcyan: hsl(184, 14%, 56%);
+    --Lightgrayishcyan: hsl(185, 41%, 84%);
+    --Light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 62.5%;
+    font-family:'Space Mono', monospace;
+    background-color: var(--Lightgrayishcyan);
+}
+
+main {
+    width: 100%;
+    height: 100%;   
+}
+
+.container-img{
+    text-align: center;
+    width: 50%;
+    margin: 40px auto 0px auto;
+       
+}
+.container-img .img-logo{
+    width: 50px;
+    height: 60px;
+    object-fit: contain;  
+}   
+
+.principal-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    width:600px;
+    height:300px;
+    margin: 50px auto;
+    padding: 20px 20px;
+    background-color:var(--White);
+    border:none;
+    border-radius: 22px;
+}
+
+.container-left{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:space-evenly;
+    width: 275px;
+    height: 260px;
+    margin: 0 auto;
+    margin-right: 10px;
+    padding: 0px 10px;
+    border:none;  
+}
+
+.container-left label{
+    font-family:'Space Mono', monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--Dark-grayishcyan);   
+}
+
+.container-input-bill{
+    width: 229px;
+    height:auto;
+    position: relative;
+}
+
+.container-input-bill ::before{
+    content: "";
+    width: 10px;
+    height: 12px;
+    background: url('./images/icon-dollar.svg');
+    background-size: cover;
+    position: absolute;
+    left:8px;
+    bottom:22px;
+    top:22px;
+    border-radius:4px;
+}
+
+.container-input-bill .input-bill{
+    width: 229px;
+    height:30px;
+    background-color: var(--Light-grayish-cyan);
+    border:none;
+    color:var(--Verydarkcyan);
+    font-family:'Space Mono', monospace;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: right;
+    border-radius:3px;
+    padding-right: 10px;
+    outline-color:var(--Strongcyan);
+    text-indent: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance:textfield;
+}
+
+.input-bill::placeholder{
+    font-family:'Space Mono', monospace;
+    font-size: 1.6rem;
+    color: var( --Lightgrayishcyan);
+    text-align:right;
+    padding-right: 5px;  
+}
+
+.container-button-percent{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:center;
+    width: 229px;          
+}
+
+.container-button-percent .button-percent{
+    width: 68px;
+    height: 28px;
+    background-color:var(--Verydarkcyan);
+    text-align: center;
+    font-weight: 500;
+    font-family:'Space Mono', monospace;
+    color:var(--White);
+    border:none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+
+.button-percent:focus, .button-percent:active{
+    background-color:var(--Strongcyan);
+}
+
+#button-custom{
+    background-color: var(--Light-grayish-cyan);
+    color:var(--Verydarkcyan);
+    font-family:'Space Mono', monospace;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border:none;
+    outline-color:var(--Strongcyan); 
+    cursor:text;
+    text-align: right;
+    padding-right: 10px;
+    text-indent: 10px;       
+}
+#button-custom ::placeholder{
+    color:var(--Verydarkcyan);
+    font-family:'Space Mono', monospace;
+    font-weight: bold;
+    text-align: right;
+}
+
+.container-input-person{
+    width: 229px;
+    height:auto;
+    position: relative;
+}
+.container-input-person ::before{
+    content: "";
+    width: 10px;
+    height: 12px;
+    background: url('./images/icon-person.svg');
+    background-size: cover;
+    position: absolute;
+    left:8px;
+    bottom:30px;
+    top:25px;
+    border-radius:4px;
+}
+
+.container-input-person .input-person{
+    width: 229px;
+    height:30px;
+    background-color: var(--Light-grayish-cyan);
+    color:var(--Verydarkcyan);
+    font-family:'Space Mono', monospace;
+    font-weight: bold; 
+    font-size: 1.6rem;
+    border:none;
+    outline-color: rgb(230, 200, 137); 
+    border-radius: 3px;
+    text-align: right;
+    padding-right: 10px;
+    text-indent: 20px;
+}
+
+.input-person::placeholder{
+    font-family:'Space Mono', monospace;
+    font-size: 1.6rem;
+    color: var( --Lightgrayishcyan);
+    text-align:right;
+    padding-right: 8px;
+}
+
+/* CONTAINER RIGHT STYLES: */
+
+.container-right {
+    display:flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+    width: 275px;
+    height: 260px;
+    padding: 0px 10px;
+    background-color:var(--Verydarkcyan);
+    border: none;
+    border-radius: 10px;
+}
+
+.container-right .mini-container-tip-amount{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 200px;
+    margin:0 auto;
+}
+
+.container-right .mini-container-total-person{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.container-right h4 b{
+    font-size: 1.1rem;
+    font-family:'Space Mono', monospace;
+    color: var(--White); 
+    
+}
+.container-right h4{
+    color:var( --Light-grayish-cyan); 
+    font-weight: lighter;
+    
+}
+
+.container-right .results-tip-amount{
+    font-size: 2.4rem;
+    color:var(--Strongcyan);
+
+}
+.container-right .results-total-person {
+    font-size: 2.4rem;
+    color:var(--Strongcyan);
+    
+}  
+.container-input-reset{
+    width: 210px;
+   
+}
+.container-input-reset .input-reset{
+    width:200px;
+    height: 28px;
+    font-family:'Space Mono', monospace;
+    margin-left: 28px;
+    background-color:var( --Strongcyan);
+    border:none;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.container-input-reset .input-reset:hover{
+    background-color: var(--Lightgrayishcyan);
+}
+
+
+
+
+    

@@ -1,0 +1,47 @@
+@media only screen and (max-width: 600px) {
+
+    .principal-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content:space-evenly;
+        width: 320px;
+        height: 650px;
+        margin: 0 auto; 
+    }
+    .container-left{
+        width: 300px;
+        align-items: center;
+    }
+    .container-right{
+        width: 250px;
+        height: 250px;
+        align-self:center;
+        margin-left: 13px;
+    }
+    .container-input-bill{
+        margin-bottom: 20px;
+    }
+    .container-left label{
+        padding-bottom: 10px;
+    }
+    .container-button-percent{
+      display:grid;
+      grid-template-columns: 113px 113px;
+      grid-template-rows:1fr 1fr 1fr;
+      grid-gap:10px;
+      margin-bottom: 20px;
+      margin-left: 5px;
+    }
+    .container-button-percent .button-percent{
+        width: 103px;
+        height: 33px;        
+    }
+    #button-custom{
+    text-align: center;
+    
+    }
+    .container-input-reset .input-reset{
+        margin-left: 15px;
+    }
+}
